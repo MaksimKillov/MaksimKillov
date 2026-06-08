@@ -417,29 +417,140 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 20px 5%;
+        padding: 10px 5%;
     }
     .navbar nav {
         display: none; 
     }
+    
+    .section {
+        padding: 25px 5%;
+    }
+    .section-title {
+        margin-bottom: 15px;
+    }
+    .section-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .skills-grid, 
+    .cases-grid, 
+    .reviews-grid {
+        gap: 12px !important;
+    }
+
+    .skills-category,
+    .case-card,
+    .review-card {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .skills-category h3 {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+        gap: 8px;
+    }
+    .skills-category h3 i { font-size: 1.1rem; }
+    
+    .skills-category ul li {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        gap: 2px;
+    }
+    .skills-category ul li span {
+        font-size: 0.75rem;
+    }
+
+    .case-header h3 {
+        font-size: 1.15rem;
+        margin-bottom: 6px;
+    }
+    .case-description {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+    .tech-stack {
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+    .tech-stack span {
+        font-size: 0.72rem;
+        padding: 3px 8px;
+    }
+    
+    .review-text { 
+        font-size: 0.85rem; 
+        margin-bottom: 10px;
+    }
+    .review-author { font-size: 0.9rem; }
+
     .hero {
         flex-direction: column;
         align-items: flex-start;
-        gap: 40px;
-        padding: 100px 5% 40px;
+        gap: 15px;
+        padding: 65px 5% 15px;
     }
-    .profile-header {
-        align-items: flex-start;
-        text-align: left;
+    .chat-bubble {
+        padding: 15px; 
+        border-radius: 14px;
+        box-shadow: none;
     }
-    .chat-bubble::before {
-        display: none; 
+    .chat-bubble p {
+        font-size: 0.9rem; 
+        margin-bottom: 10px;
     }
-    .section {
-        padding: 60px 5%;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+        letter-spacing: 2px;
     }
-    .section-title h2 {
-        font-size: 2rem;
+
+    .hero-left h1 {
+        font-size: 1.4rem; 
+    }
+    .hero-left h2 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    .hero-subtitle {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .avatar-wrapper {
+        width: 90px; 
+        height: 90px;
+        margin-bottom: 12px;
+    }
+
+    .download-btn,
+    .contact-btn {
+        padding: 8px 14px; 
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+    .contacts-wrapper {
+        gap: 8px;
+    }
+
+    .site-footer {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+    .footer-content p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+    .footer-links {
+        gap: 10px;
+    }
+    .footer-links a {
+        font-size: 0.8rem;
     }
 }
 
