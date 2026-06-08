@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Main Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            MAKSIMKILLOV
+        </div>
+        
+        <nav>
+            <a href="#hero">Главная</a>
+            <a href="#skills">Навыки</a>
+            <a href="#cases">Кейсы</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero reveal">
+
+        <div class="hero-left">
+            <!-- HolyCTF{s0urc3_v13w3r} -->
+            <div class="avatar-wrapper">
+                <img src="assets/avatar.jpg" alt="avatar">
+            </div>
+            <h1>MAKSIM KILLOV</h1>
+            <h2>CYBER SECURITY GENERALIST</h2>
+
+            <p class="hero-subtitle">
+                Pentest • Infrastructure Security • Linux Hardening • Network Defense
+            </p>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="chat-bubble">
+
+                <p>
+                	Привет! Я специализируюсь на аудите безопасности, защите инфраструктуры и поиске критических уязвимостей в серверных системах, веб-сервисах – и не только.
+                </p>
+
+                <p>
+                    Работаю с Linux hardening, сетевой защитой (DDoS mitigation), настройкой фаерволов и автоматизацией процессов безопасности. Устраняю уязвимости и помогаю выстроить защищенную архитектуру.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="skills" class="section reveal">
+
+        <div class="section-title">
+            <h2>Навыки</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skills-category">
+                <h3><i class="fa-solid fa-shield-halved"></i> Infrastructure & Defense</h3>
+                <ul>
+                    <li>Linux Server Hardening <span>Безопасная настройка операционных систем</span></li>
+                    <li>Network Firewalling <span>Развертывание и настройка межсетевых экранов</span></li>
+                    <li>Web Server Security <span>Оптимизация и защита веб-серверов</span></li>
+                    <li>DDoS Mitigation <span>Построение архитектуры защиты от распределенных атак</span></li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3><i class="fa-solid fa-terminal"></i> Offensive Security & Analysis</h3>
+                <ul>
+                    <li>Network Traffic Analysis <span>Перехват, глубокий анализ и фильтрация трафика</span></li>
+                    <li>Vulnerability Scanning & Recon <span>Сканирование уязвимостей периметра</span></li>
+                    <li>Penetration Testing <span>Тестирование систем на проникновение</span></li>
+                    <li>OSINT <span>Сбор и комплексный анализ данных из открытых источников</span></li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3><i class="fa-solid fa-microchip"></i> Development & Hardware</h3>
+                <ul>
+                    <li>Python<span>Автоматизация аудита, скриптинг и разработка утилит</span></li>
+                    <li>C++ / Rust <span>Создание оптимизированного и высокопроизводительного софта</span></li>
+                    <li>IoT Security & Hardware <span>Аппаратная инженерия и анализ безопасности устройств</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="cases" class="section reveal">
+
+        <div class="section-title">
+            <h2>Кейсы (Мой опыт)</h2>
+        </div>
+
+        <div class="cases-grid">
+
+
+            <div class="case-card">
+                <div class="case-header">
+                    <h3>Minecraft Sports League</h3>
+                </div>
+
+                <p class="case-description">
+                    Провел комплексный аудит безопасности серверной инфраструктуры проекта. Выявил критические уязвимости: раскрытие реального IP-адреса хоста через PTR-записи, открытый доступ к Zabbix-мониторингу (порт 10050) и избыточную выдачу метаинформации сервером Nginx.
+                <br><br>
+                    Подготовил план действий по hardening'у системы, включая настройку фильтрации трафика через UFW с белыми списками для прокси-серверов и принудительное скрытие серверных токенов.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Linux</span>
+                    <span>UFW</span>
+                    <span>Nginx</span>
+                    <span>Zabbix</span>
+                    <span>DDoS Mitigation</span>
+                </div>
+
+                <a href="assets/reports/minecraft-sports-league.pdf" class="download-btn" download>
+                    <i class="fa-solid fa-download"></i> Скачать отчет
+                </a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="reviews" class="section reveal">
+
+        <div class="section-title">
+            <h2>Отзывы</h2>
+        </div>
+
+        <div class="reviews-grid">
+            
+            <div class="review-card">
+                <p class="review-text">
+                    "Грамотно описал то, что нашел и показал, как это поправить."
+                </p>
+                <div class="review-author">– keda_random4ikov</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacts" class="section reveal">
+
+        <div class="section-title">
+            <h2>Контакты</h2>
+        </div>
+
+        <div class="contacts-wrapper">
+
+            <a href="https://t.me/sushikilla" target="_blank" class="contact-btn">
+                <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+
+            <a href="https://discord.com/664057649645617174" target="_blank" class="contact-btn">
+                <i class="fa-brands fa-discord"></i> Discord
+            </a>
+
+            <a href="https://github.com/MaksimKillov" target="_blank" class="contact-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 Maksim Killov. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://t.me/sushikilla">Telegram</a>
+                <a href="https://discord.com/664057649645617174">Discord</a>
+                <a href="https://github.com/MaksimKillov">Github</a>
+                <a>HolyCTF{y3s_w3_ch3ck_f00t3rs}</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
